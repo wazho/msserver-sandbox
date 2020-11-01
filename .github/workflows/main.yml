@@ -20,13 +20,5 @@ jobs:
     #     dotnet-version: ${{ matrix.dotnet }}
     - name: LS
       run: |
-        ls
-        ls .\AssetStudio
-        ls .\AssetStudio\AssetStudioGUI
-        ls .\AssetStudio\AssetStudioGUI\bin
-        ls .\AssetStudio\AssetStudioGUI\bin\Debug
-        ls .\AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe
         .\AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe artifacts out
-        ls
-        Get-Childitem .\AssetStudio -include * -depth 2
         Get-Childitem .\artifacts -include * -depth 5
