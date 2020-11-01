@@ -21,3 +21,5 @@ jobs:
     - name: LS
       run: |
         ls
+        AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe artifacts out
+        ls
