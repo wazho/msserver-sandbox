@@ -1,0 +1,9 @@
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\bin\Debug\Texture2DDecoderWrapper.dll
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\bin\Debug\Texture2DDecoderWrapper.pdb
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\bin\Debug\AssetStudio.PInvoke.dll
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\bin\Debug\AssetStudio.PInvoke.pdb
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\obj\Debug\Texture2DDecoderWrapper.csproj.CoreCompileInputs.cache
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\obj\Debug\Texture2DDecoderWrapper.csproj.CopyComplete
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\obj\Debug\Texture2DDecoderWrapper.dll
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\obj\Debug\Texture2DDecoderWrapper.pdb
+C:\Projects\lah_archive\AssetStudio\Texture2DDecoderWrapper\obj\Debug\Texture2DDecoderWrapper.csprojAssemblyReference.cache
