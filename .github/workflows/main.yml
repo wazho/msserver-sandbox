@@ -27,7 +27,7 @@ jobs:
       - name: LS
         run: |
           .\AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe artifacts out
-          Get-Childitem .\artifacts -include * -depth 100
+          Get-Childitem .\out -include * -depth 100
           cd ${env:PUBLISH_DIR}
           git init
           git config --global user.name ${env:USER_NAME}
