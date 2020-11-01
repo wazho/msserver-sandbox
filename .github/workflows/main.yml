@@ -28,3 +28,5 @@ jobs:
         ls .\AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe
         .\AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe artifacts out
         ls
+        Get-Childitem .\AssetStudio -include * -depth 2
+        Get-Childitem .\artifacts -include * -depth 5
