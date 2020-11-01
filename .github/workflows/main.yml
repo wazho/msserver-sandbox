@@ -12,7 +12,7 @@ jobs:
       MY_SECRET: ${{secrets.commit_secret}}
       USER_NAME: githubaction
       USER_EMAIL: githubaction@fake.com
-      PUBLISH_DIR: ./artifacts
+      PUBLISH_DIR: artifacts
       GH_PAGES_BRANCH: artifacts
     runs-on: windows-2019
     strategy:
