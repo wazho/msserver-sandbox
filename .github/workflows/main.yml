@@ -28,10 +28,7 @@ jobs:
         run: |
           .\AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe artifacts out
           Get-Childitem .\artifacts -include * -depth 100
-      - name: Commit files
-        run: |
-          cd $PUBLISH_DIR
-          touch .nojekyll
+          cd .\artifacts
           git init
           git config --local user.name $USER_NAME
           git config --local user.email $USER_EMAIL
@@ -41,4 +38,3 @@ jobs:
           git add --all
           git commit -m "deploy to GitHub pages"
           git push origin $GH_PAGES_BRANCH -f
-          echo 🤘 deploy $GH_PAGES_BRANCH complete.
