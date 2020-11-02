@@ -28,6 +28,7 @@ jobs:
         run: |
           Expand-Archive -Path AssetStudio.zip -DestinationPath AssetStudio
           .\AssetStudio\Release\AssetStudioConsole.exe artifacts ${env:PUBLISH_DIR}
+          Start-Sleep -Seconds 30
           Get-Childitem out -include * -depth 100
           cd out
           ls
