@@ -29,13 +29,13 @@ jobs:
           Expand-Archive -Path AssetStudio.zip -DestinationPath AssetStudio
           .\AssetStudio\Release\AssetStudioConsole.exe artifacts ${env:PUBLISH_DIR}
           Get-ChildItem -Recurse ${env:ARTIFACTS_DIR} | select Length,Directory,Name
-          cd ${env:PUBLISH_DIR}
-          git init
-          git config --global user.name ${env:USER_NAME}
-          git config --global user.email ${env:USER_EMAIL}
-          git status
-          git remote add origin https://${env:MY_SECRET}@github.com/${env:GITHUB_REPOSITORY}.git
-          git checkout -b ${env:GH_PAGES_BRANCH}
-          git add --all
-          git commit -m "deploy to GitHub pages"
-          git push origin ${env:GH_PAGES_BRANCH} -f
+          # cd ${env:PUBLISH_DIR}
+          # git init
+          # git config --global user.name ${env:USER_NAME}
+          # git config --global user.email ${env:USER_EMAIL}
+          # git status
+          # git remote add origin https://${env:MY_SECRET}@github.com/${env:GITHUB_REPOSITORY}.git
+          # git checkout -b ${env:GH_PAGES_BRANCH}
+          # git add --all
+          # git commit -m "deploy to GitHub pages"
+          # git push origin ${env:GH_PAGES_BRANCH} -f
