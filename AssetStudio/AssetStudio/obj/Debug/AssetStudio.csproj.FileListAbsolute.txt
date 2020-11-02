@@ -1,6 +1,0 @@
-C:\Projects\lah_archive\AssetStudio\AssetStudio\bin\Debug\AssetStudio.dll
-C:\Projects\lah_archive\AssetStudio\AssetStudio\bin\Debug\AssetStudio.pdb
-C:\Projects\lah_archive\AssetStudio\AssetStudio\obj\Debug\AssetStudio.csprojAssemblyReference.cache
-C:\Projects\lah_archive\AssetStudio\AssetStudio\obj\Debug\AssetStudio.csproj.CoreCompileInputs.cache
-C:\Projects\lah_archive\AssetStudio\AssetStudio\obj\Debug\AssetStudio.dll
-C:\Projects\lah_archive\AssetStudio\AssetStudio\obj\Debug\AssetStudio.pdb
