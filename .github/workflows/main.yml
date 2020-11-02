@@ -26,6 +26,7 @@ jobs:
       #     dotnet-version: ${{ matrix.dotnet }}
       - name: LS
         run: |
+          Get-ChildItem -Recurse .\AssetStudio
           Expand-Archive -Path AssetStudio.zip -DestinationPath AssetStudio
           .\AssetStudio\AssetStudioConsole.exe artifacts ${env:PUBLISH_DIR}
           Get-ChildItem -Recurse ${env:ARTIFACTS_DIR} | select Length,Directory,Name
