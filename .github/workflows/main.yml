@@ -28,8 +28,9 @@ jobs:
         run: |
           Expand-Archive -Path AssetStudio.zip -DestinationPath AssetStudio
           .\AssetStudio\Release\AssetStudioConsole.exe artifacts ${env:PUBLISH_DIR}
-          Get-Childitem ${env:PUBLISH_DIR} -include * -depth 100
-          # cd ${env:PUBLISH_DIR}
+          Get-Childitem out -include * -depth 100
+          cd out
+          ls
           # git init
           # git config --global user.name ${env:USER_NAME}
           # git config --global user.email ${env:USER_EMAIL}
