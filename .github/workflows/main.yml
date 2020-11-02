@@ -26,8 +26,9 @@ jobs:
       #     dotnet-version: ${{ matrix.dotnet }}
       - name: LS
         run: |
-          .\AssetStudio\AssetStudioGUI\bin\Debug\AssetStudioGUI.exe artifacts ${env:PUBLISH_DIR}
-          Get-Childitem ${env:PUBLISH_DIR} -include * -depth 100
+          Expand-Archive -Path AssetStudio.zip -DestinationPath AssetStudio
+          .\AssetStudio\AssetStudioConsole.exe artifacts ${env:PUBLISH_DIR}
+          Get-ChildItem -Recurse ${env:ARTIFACTS_DIR} | select Length,Directory,Name
           cd ${env:PUBLISH_DIR}
           git init
           git config --global user.name ${env:USER_NAME}
