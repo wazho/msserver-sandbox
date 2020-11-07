@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: hello world
+          ref: helloworld
       - name: LS
         run: |
           ls -al
