@@ -20,7 +20,8 @@ jobs:
         dotnet: [ '4.7.2' ]
     steps:
       - uses: actions/checkout@v2
-        ref: hello world
+        with:
+          ref: hello world
       - name: LS
         run: |
           ls -al
