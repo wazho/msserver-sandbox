@@ -20,14 +20,13 @@ jobs:
         dotnet: [ '4.7.2' ]
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: helloworld
       - name: LS
         run: |
           ls
+          New-Item -Path . -Name "ignore" -ItemType "file" -Value "This is a text string."
       - uses: actions/checkout@v2
         with:
-          ref: byebye
+          ref: helloworld
       - name: LS
         run: |
           ls
