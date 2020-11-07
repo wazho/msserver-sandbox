@@ -20,24 +20,28 @@ jobs:
         dotnet: [ '4.7.2' ]
     steps:
       - uses: actions/checkout@v2
+        ref: hello world
+      - name: LS
+        run: |
+          ls -al
       # - name: Setup dotnet
       #   uses: actions/setup-dotnet@v1
       #   with:
       #     dotnet-version: ${{ matrix.dotnet }}
-      - name: LS
-        run: |
-          Expand-Archive -Path AssetStudio.zip -DestinationPath AssetStudio
-          .\AssetStudio\Release\AssetStudioConsole.exe artifacts ${env:PUBLISH_DIR}
-          Start-Sleep -Seconds 30
-          Get-Childitem out -include * -depth 100
-          cd out
-          ls
-          git init
-          git config --global user.name ${env:USER_NAME}
-          git config --global user.email ${env:USER_EMAIL}
-          git status
-          git remote add origin https://${env:MY_SECRET}@github.com/${env:GITHUB_REPOSITORY}.git
-          git checkout -b ${env:GH_PAGES_BRANCH}
-          git add --all
-          git commit -m "deploy to GitHub pages"
-          git push origin ${env:GH_PAGES_BRANCH} -f
+      # - name: LS
+      #   run: |
+      #     Expand-Archive -Path AssetStudio.zip -DestinationPath AssetStudio
+      #     .\AssetStudio\Release\AssetStudioConsole.exe artifacts ${env:PUBLISH_DIR}
+      #     Start-Sleep -Seconds 30
+      #     Get-Childitem out -include * -depth 100
+      #     cd out
+      #     ls
+      #     git init
+      #     git config --global user.name ${env:USER_NAME}
+      #     git config --global user.email ${env:USER_EMAIL}
+      #     git status
+      #     git remote add origin https://${env:MY_SECRET}@github.com/${env:GITHUB_REPOSITORY}.git
+      #     git checkout -b ${env:GH_PAGES_BRANCH}
+      #     git add --all
+      #     git commit -m "deploy to GitHub pages"
+      #     git push origin ${env:GH_PAGES_BRANCH} -f
